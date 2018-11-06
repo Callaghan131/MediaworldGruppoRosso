@@ -1,0 +1,121 @@
+/*########Classi bootstrap e modernizr##########*/
+.hidden{display: block !important;}
+.row{margin: 0px;}
+
+@media (max-width: 767px)
+{
+  td, th
+  {
+    display: block;
+  }
+  tr
+{
+  border-top: 2px solid black;
+}
+  thead
+  {
+    visibility: collapse;
+  }
+
+  table
+  {
+    margin-top: 15px;
+    -webkit-box-shadow:inset 1px -5px 10px 3px #8A7878;
+    box-shadow:inset 1px -5px 10px 3px #8A7878;
+  }
+
+  #crea, #matita, #cestino, #logout
+  {
+    position: fixed;
+    z-index: 10;
+  }
+  .modal-footer
+  {
+    padding: 10px 0px 0px 0px;
+  }
+  .modal-content
+  {
+    margin-top: 19%;
+  }
+  td:nth-of-type(1):before { content: "ID "; font-weight: 700;} /* inseriamo l'etichetta per ciascuna cella con il selettore nth-of-type */
+  td:nth-of-type(2):before { content: "Nome "; font-weight: 700;}
+  td:nth-of-type(3):before { content: "Cognome "; font-weight: 700;}
+  td:nth-of-type(4):before { content: "Username "; font-weight: 700;}
+  td:nth-of-type(5):before { content: "Password "; font-weight: 700;}
+  td:nth-of-type(6):before { content: "Età "; font-weight: 700;}
+  td:nth-of-type(7):before { content: "Sesso "; font-weight: 700;}
+}
+
+/*#########Tag principali##########*/
+body, html
+{
+  width: 100%;
+  height: 100%;
+}
+
+body
+{
+  padding: 15px;
+  background-image: url("../../img/Sfondo.jpg");
+  background-attachment: fixed;
+  font-family: 'Righteous', cursive, "Arial", "Verdana", "Georgia";
+}
+span
+{
+  margin-top: 5px;
+}
+footer
+{
+  padding-bottom: 10px;
+}
+
+
+/*##########ID#########*/
+#crea, #matita, #cestino, #logout
+{
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  width: 32px;
+  color:transparent;
+  outline:0;
+}
+
+#tabella
+{
+  margin: 35px 0px 35px 0px;
+}
+
+#matita
+{
+    background-image: url("../../img/Tabella/Matita.ico");
+}
+#cestino
+{
+    background-image: url("../../img/Tabella/Cestino.ico");
+}
+#crea
+{
+  background-image: url("../../img/Tabella/Crea.ico");
+  width: 37px;
+  height: 37px;
+}
+#logout
+{
+  background-image: url("../../img/Tabella/Logout.png");
+  width: 37px;
+  height: 37px;
+}
+#sesso
+{
+  margin-bottom: 20px;
+}
+
+/*##########CLASSI#########*/
+.comparsa
+{
+  display: inline;
+}
+.modal-backdrop.in
+{
+  display: none;
+}
